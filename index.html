@@ -1,0 +1,233 @@
+
+<html>
+<head>
+<style>
+body {
+  background-image: url("image.jpg");
+  background-position: 50% 50%;
+  background-repeat: repeat;
+}
+h4{
+  font-family: Calibri; 
+  font-size: 25pt;         
+  font-style: normal; 
+  font-weight: bold; 
+  color:Black;
+  text-align: center; 
+  text-decoration: underline
+}
+
+table{
+  font-family: Calibri; 
+  color:white; 
+  font-size: 11pt; 
+  font-style: normal;
+  font-weight: bold;
+  text-align:; 
+  background-color: Black; 
+  border-collapse: collapse; 
+  border: 4px solid grey
+}
+table.inner{
+  border: 0px
+}
+
+</style>
+<title>REGISTRATION FORM</title>
+
+</head>
+ 
+<body>
+<form action="insert.php" method="POST">
+
+<h4>REGISTRATION FORM</h4>
+
+<table align="center" cellpadding = "20">
+<tr>
+<td>FIRST NAME</td>
+<td>
+<input type="text" placeholder="Enter First Name" name="Fname" maxlength="100" required>
+</td>
+</tr>
+ 
+<tr>
+<td>LAST NAME</td>
+<td>
+<input type="text" placeholder="Enter Last Name" name="Lname" maxlength="100" required >
+</td>
+</tr>
+
+<tr>
+<td>REGISTRATION NUMBER</td>
+<td>
+<input type="text" placeholder="Eg. 19ABC9999" name="Rnumber" maxlength="9" required>
+</td>
+</tr>
+
+<tr>
+<td>COURSE</td>
+<td>
+<input type="text" placeholder="Enter Course" name="Course" maxlength="100" required>
+</td>
+</tr>
+
+<tr>
+<td>BRANCH</td>
+<td>
+<input type="text" placeholder="Enter Branch" name="Branch" maxlength="100" required>
+</td>
+</tr>
+
+ 
+<tr>
+<td>DATE OF BIRTH</td>
+ 
+<td>
+<select name="Bday" id="Bday" required>
+<option value="-1">Day</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+ 
+<select id="Bmonth" name="Bmonth" required>
+<option value="-1">Month</option>
+<option value="January">Jan</option>
+<option value="February">Feb</option>
+<option value="March">Mar</option>
+<option value="April">Apr</option>
+<option value="May">May</option>
+<option value="June">Jun</option>
+<option value="July">Jul</option>
+<option value="August">Aug</option>
+<option value="September">Sep</option>
+<option value="October">Oct</option>
+<option value="November">Nov</option>
+<option value="December">Dec</option>
+</select>
+ 
+<select name="Byear" id="Byear" required>
+ 
+<option value="-1">Year</option>
+<option value="2012">2019</option>
+<option value="2011">2018</option>
+<option value="2010">2017</option>
+<option value="2009">2016</option>
+<option value="2008">2015</option>
+<option value="2007">2014</option>
+<option value="2006">2013</option>
+<option value="2005">2012</option>
+<option value="2004">2011</option>
+<option value="2003">2010</option>
+<option value="2002">2009</option>
+<option value="2001">2008</option>
+<option value="2000">2007</option>
+<option value="1999">2006</option>
+<option value="1998">2005</option>
+<option value="1997">2004</option>
+<option value="1996">2003</option>
+<option value="1995">2002</option>
+<option value="1994">2001</option>
+<option value="1993">2000</option>
+<option value="1992">1999</option>
+<option value="1991">1998</option>
+<option value="1990">1997</option>
+<option value="1989">1996</option>
+</select>
+</td>
+</tr>
+ 
+<tr>
+<td>EMAIL ID</td>
+<td><input type="text" placeholder="Eg. abc@def.com" name="Email" maxlength="100" required></td>
+</tr>
+ 
+<tr>
+<td>MOBILE NUMBER</td>
+<td>
+<input type="text" placeholder="Eg. 9876543210" name="Mobile_Number" maxlength="10" required>
+</td>
+</tr>
+ 
+<tr>
+<td>GENDER</td>
+<td>
+Male <input type="radio" name="Gender" value="M" required>
+Female <input type="radio" name="Gender" value="F" required>
+Other <input type="radio" name="Gender" value="O" required>
+</td>
+</tr>
+ 
+<tr>
+<td>ADDRESS <br /><br /><br /></td>
+<td><textarea name="Address" placeholder="Enter address" rows="8" cols="30" required></textarea></td>
+</tr>
+ 
+<tr>
+<td>CITY</td>
+<td><input type="text" placeholder="Enter City" name="City" maxlength="100" required>
+</td>
+</tr>
+ 
+<tr>
+<td>PIN CODE</td>
+<td><input type="text" placeholder="Eg. 999999" name="Pincode" maxlength="6" required>
+</td>
+</tr>
+ 
+<tr>
+<td>STATE</td>
+<td><input type="text" placeholder="Enter State" name="State" maxlength="100" required>
+</td>
+</tr>
+
+<tr>
+<td>APPLIED FOR</td>
+<td>
+Technical<input type="radio" name="Afor" value="T" required>
+Management<input type="radio" name="Afor" value="M" required>
+Design<input type="radio" name="Afor" value="D" required>
+</td>
+</tr>
+
+<tr>
+<td>REASON <br /><br /><br /></td>
+<td><textarea name="Reason" placeholder="Enter reason" rows="8" cols="30" required></textarea></td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit">
+</td>
+</tr>
+
+</body>
+</html>
